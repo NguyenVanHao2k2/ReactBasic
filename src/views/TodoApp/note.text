@@ -1,0 +1,10 @@
+ Xây dụng ứng dụng ToDo App
+
+CRUD (Create - Read - Update - Delete)
+
+Sử dụng thông báo 
+
+npm install --save-exact react-toastify@8.0.2
+
+
+

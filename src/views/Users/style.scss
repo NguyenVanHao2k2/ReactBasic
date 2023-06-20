@@ -1,0 +1,21 @@
+.list-user-content {
+    padding: 6px;
+    .child {
+        padding: 12px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .child:first-child{
+        border-top: 1px solid #ccc;
+    }
+
+}
+.title {
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 9px;
+    color: #fff;
+    background: blue;
+}

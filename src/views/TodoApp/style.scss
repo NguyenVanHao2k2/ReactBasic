@@ -1,0 +1,55 @@
+.todo-content {
+
+    .css-input{
+        height: 30px;
+        width: 300px;
+        border-radius: 20px;;
+        margin-right: 10px;
+        padding: 5px 10px;
+    }
+
+    .css-send{
+        cursor: pointer;
+        height: 30px;
+        border-radius: 10px;
+        width: 70px;
+        background-color: green;
+        color: #fff;
+    }
+
+    width: 585px;
+    .todo-Child {
+        border-bottom: 1px solid;
+        height: 60px;
+
+        span.css-content {
+            display: inline-block;
+            margin: 12px;
+        }
+
+        .css-btn {
+            margin: 0 5px;
+            cursor: pointer;
+            height: 30px;
+            padding: 4px;
+            border-radius: 10px;
+            width: 70px;
+        }
+
+        &:first-child {
+        margin-top: 50px;
+        border-top: 1px solid;
+        }
+
+        .css-info{
+            background-color: blue;
+            color: #fff;
+        }
+
+        .css-danger{
+            background-color: red;
+            color: #fff;
+        }
+
+    }
+}

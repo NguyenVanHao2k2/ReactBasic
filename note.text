@@ -1,0 +1,161 @@
+[1] stateless và [2] statefull components
+
+- Có hai cái components là class component và function component (function, arrow function)
+- [1] nó là có state 
+- [2] nó là không có state
+
+- Bản chất của function hay class component thì nó là render ra dữ liệu thì bắt buộc nó phải trả về đó là hàm return 
+
+----------------
+
+- Conditional Output 
+
+- Render output là JSX 
+
+----------------
+
+- Chia cắt Component (Split Component) 
+
+----------------
+
+- 1 props có thể là function chứ ko phải là một biến 
+
+- Virtual DOM 
+
+- Không tồn tại là ảo DOM Ảo 
+
+- Trong quá trính chạy thì React nó sẽ tự tạo ra một Virtual DOM cái DOM Ảo này nó sẽ chạy chìm bên dưới nó sẽ so sánh hiện tại.
+
+- Nó sẽ so sánh cái Virtual DOM và cái Current DOM nó sẽ tìm sự khác biệt sau đó nó sẽ update chính sự khác biệt đó ào Real DOM việc update 1 phần tử này sẽ giúp cho hiệu năng nó cao hơn.
+
+------------------
+
+- Sử dụng CSS File  
+
+-----------------
+
+- React Router 
+
+- Để user routers we sẽ use package react router dom
+
+- Tên thư viện React Router DOM
+
+- npm i --save-exact react-router-dom@5.3.0
+
+- Để khắc phục việc chuyển trang load lại trạng we use Links và NavLinks
+
+- Dùng to: String
+
+------------------
+
+- Use thư viện Axios 
+
+- Dùng nó để kết nối với Backend 
+
+- Trang web reqres.in nó cung cấp nhiều API Để use được cái này we sẽ dử dụng thư viện axios 
+
+- Thư viện Axios nó help we gọi API 
+
+- Cài thư viện 
+
+npm i --save-exact axios@0.21.4
+
+-- Hạn chế tối đa việc viết các code logic trong render file này chỉ hiển thị data thôi ko nên viết code xử lý trong đây!
+
+-- Sử dụng Promise để tránh việc mất đồng bộ 
+
+-- Vì hành động gọi API nó tốn nhiều time nên we sẽ xét việc bất đồng bộ của JS 
+
+
+------------------------------
+
+- Router Parameters
+
+-- Tham số trên đường dẫn 
+
+-- ----------------
+
+-- Switch Tags
+
+-- Giống như là we use Switch case 
+
+-- Nó chỉ render đúng một cái component duy nhất thôi, Nếu ko use switch nó sẽ hiển thị nhiều component một lúc.
+
+-------------------
+
+-- Importings images
+
+--------------------------
+
+-- Redux 
+
+- Là công cụ nổi tiếng React  
+
+- Bản chất của nó là một thư viện 
+
+- React truyền data từ trên xuống dười cha đến con
+
+- Nó là khối độc lập với React 
+
+- Vì là độc lập nên nó có thể chọn vào bất kỳ một cái phần từ nào để mà có thể xử lý 
+
+- Nó khác gì với local storage và context API
+
+- Một khi sự thay đổi về dữ liệu thì Redux nó sẽ cập nhật lại trong React 
+
+- Thường we sẽ dùng socket io để nghe tính hiệu và truyền và use redux vẫn làm đc và còn tốt hơn 
+
+- We có thể quyết định xử lý hoặc ko xử lý khi use redux còn context API thì ngược lại cha thay đổi thì con thay đổi.
+
+- Local storage nó là data tạm nằm trên trình duyệt
+
+- Use redux để lưu data we có thể sử dụng ở nhiều nơi 
+
+- Sau này ở một số chức năng we sẽ làm theo hiệu năng nên dùng redux là hợp lý 
+
+-----------------------
+
+- Redux Stores, Actions, Reducers
+
+- Redux có state riêng và react cũng vậy 
+
+- Đối với redux nó là actions khi redux lắng nghe được hành động nó sẽ cập nhật vào state của redux 
+
+- Action hay còn gọi là sự kết nối giữa React và Redux 
+
+- React sẽ bắn một cái action thì cái action đó chính là dispatch này nó chính là action 
+
+- Action là dùng để kết hợp React với Redux
+
+- Redux như 1 cái nhà kho để chứa data và nó có 1 cái state duy nhất thôi 
+
+-------------------------
+
+-- Set up Dự án Redux 
+
+- Cài thư viện npm redux 
+
+- npm i --save-exact redux@4.1.1
+
+----------------------------
+
+- Vận hành lấy dữ liệu và chạy nó là Mapping state (Redux) to Props (React)
+
+- Lấy dữ liệu của redux vào trong react
+
+- Tại sao lại mapping thông qua props vì hai ứng dụng này nó chạy song song và vì thế we ko thể chạy song song trong ứng dụng của React đc
+
+- Redux là nơi share data nhiều nơi trong components để tái use code.
+
+---------------- 
+
+- Hiển thị data và xóa sửa dữ liệu bằng Redux 
+
+---------------------------
+
+-- Sử dụng vite.js để code thay vì use webpack
+
+- 
+
+
+
